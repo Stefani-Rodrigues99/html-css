@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* :root --> cria variáveis no css como cores, fontes, tamanhos para ser estilizado. Facilita na modificação e padronização*/
+:root{
+    --color-primary: oklch(0.946 0.033 307.174);
+    --color-secundary: oklch(0.827 0.119 306.383);
+    --color-terciary: oklch(0.714 0.203 305.504);
+    --color-quaternary: oklch(0.558 0.288 302.321);
+    --color-quintenary: oklch(0.291 0.149 302.717);
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(210, 166, 252, 0.377);
+    margin: 0px;
+}
+
+header {
+    background-color: rgba(177, 115, 235, 0.527);
+    text-align: center;
+       padding: 20px;
+    box-shadow: 0px 5px -3px rgba(0, 0, 0, 0.767);
+}
+
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: rgb(78, 25, 128);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.055);
+}
+
+header p {
+    font-size: 16px;
+    width: 50%;
+    margin: auto;
+    color: rgb(46, 46, 46);
+    margin-top: 5px;
+}
+
+nav {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: solid;
+    color: rgb(252, 252, 252);
+    background-color: rgb(122, 66, 175);
+    padding: 10px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+
+}
+
+nav a:hover {
+    background-color: rgb(98, 53, 139);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+main strong{
+    color: var(--color-quintenary);
+
+}
+
+.content {
+    background-color: white;
+    padding: 30px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.226);
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: rgb(78, 25, 128);
+    text-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.11);
+}
+
+ul {
+    margin-bottom: 10px;
+}
+
+ul li {
+    margin-left: 8px;
+    padding: 3px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(127, 82, 168);
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+picture img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+iframe {
+    width: 100%;
+}
+
+aside {
+    background-color: rgba(202, 164, 238, 0.199);
+    padding: 5px;
+    border-left: 5px rgb(130, 46, 209) solid;
+    font-style: italic;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: rgb(130, 46, 209);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.082);
+
+}
